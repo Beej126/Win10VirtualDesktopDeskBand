@@ -20,7 +20,7 @@ pretty quick and dirty combination of:
     ```bat
     regasm Win10VirtualDesktopDeskBand.dll
     ```
-- couldn't resist adding CalcBinding dependency for code laziness... it's gotta go in the gac as well, but waa, it's not strongnamed?! [this tool](https://brutaldev.com/post/NET-Assembly-Strong-Name-Signer) for the win!
+- ~~couldn't resist adding CalcBinding dependency for code laziness... it's gotta go in the gac as well, but waa, it's not strongnamed?! [this tool](https://brutaldev.com/post/NET-Assembly-Strong-Name-Signer) for the win!~~ nope, couldn't get passed the lack of a publickeytoken on that assembly even with the strong-name
 - had to do a bindingRedirect in !machine.config! to get it to load the v4.0.5.0 of System.Runtime.CompilerServices.Unsafe.dll that was present on my system versus wanting to load 4.0.3.0 that was linked in one of the dependent assemblies.
   - C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\machine.config
   ```
