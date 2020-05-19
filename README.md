@@ -7,6 +7,8 @@ pretty quick and dirty combination of:
 - [VirtualDesktop](https://github.com/Grabacr07/VirtualDesktop) helper library... boy is this some complex code! no way i would've got that working
   - i've embedded the source vs referencing nuget because had to do a few small patches on top of v4.0.1 (search for "fix:") to get to work under .Net Framework (4.7.2), necessary because i don't think COM regasm is supported by .net core quite yet... sounds like they're on it
 
+![](https://user-images.githubusercontent.com/6301228/82292998-aa391800-9960-11ea-9b6c-39ee87ff8677.png)
+![](https://user-images.githubusercontent.com/6301228/82292734-4282cd00-9960-11ea-9c2d-072737dbc82f.gif)
 
 ## Notes
 - had to register the main assembly and all dependent assemblies in gac for it to find them all, [docs](https://github.com/dsafa/CSDeskBand/wiki#deskband-installation)
