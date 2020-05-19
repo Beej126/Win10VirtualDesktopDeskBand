@@ -1,0 +1,1 @@
+Get-ChildItem . -Recurse -Directory | Where-Object {$_.Name -eq 'bin' -or $_.Name -eq 'obj' } | % { $_.FullName; rmdir -Recurse $_.FullName }

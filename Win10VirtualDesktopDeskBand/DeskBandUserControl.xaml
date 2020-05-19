@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Win10VirtualDesktopDeskBand.DeskBandUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Win10VirtualDesktopDeskBand"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" 
+             Foreground="White" FontSize="32"
+             DataContext="{Binding RelativeSource={RelativeSource Self}}"
+             Loaded="DeskBandUserControl_OnLoaded"
+>
+  <UserControl.Resources>
+    <local:BoolVisConverter x:Key="BoolVisConverter"/>
+  </UserControl.Resources>
+
+  <WrapPanel>
+    <ComboBox Width="200"
+              ItemsSource="{Binding DesktopNames}" 
+              SelectedIndex="{Binding SelectedIndex, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+              Visibility="{Binding IsNotAddMode, Converter={StaticResource BoolVisConverter}}"
+              />
+    <TextBox Name="TxtName"
+             Text="{Binding NewName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+             Width="200"
+             Visibility="{Binding IsNotAddMode, Converter={StaticResource BoolVisConverter}, ConverterParameter=REVERSE}"
+             KeyDown="TxtName_OnKeyDown"
+             />
+    <Button Width="40" Click="BtnAdd_OnClick" IsEnabled="{Binding IsNotAddMode}">+</Button>
+    <Button Width="40" Click="BtnRemove_OnClick" IsEnabled="{Binding IsRemoveEnabled}">-</Button>
+  </WrapPanel>
+
+</UserControl>
