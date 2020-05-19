@@ -1,5 +1,6 @@
 # Win10VirtualDesktopDeskBand
-Provides a Windows Taskbar widget for selecting <u>NAMED</u> Virtual Desktops.
+Provides a Windows Taskbar widget for creating & selecting <u>NAMED</u> Virtual Desktops.<br/>
+Notably, it displays the currently selected desktop name at a glance, even when you change via Windows' native UX.
 
 pretty quick and dirty combination of:
 - ~~[SharpShell](https://github.com/dwmkerr/sharpshell) for the DeskBand (aka Toolbar)~~
