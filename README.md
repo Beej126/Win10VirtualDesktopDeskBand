@@ -43,3 +43,15 @@ pretty quick and dirty combination of:
 - **started** using  [Rick Strahl's  app.config management lib](https://github.com/RickStrahl/Westwind.ApplicationConfiguration) to persist the desktop names... needed to be signed/strong-named to compile into this strong-named assembly... signing  makes installing this extension a little cleaner... used [this handy tool](https://brutaldev.com/post/NET-Assembly-Strong-Name-Signer) to sign the 3rd party lib that didn't come that way
   - but then dissapointingly discovered after all the fancy stuff his lib did well, it didn't handle simple deleting of a list item... it just saves the current list items and leaves the old ones?!
   - [switched to a simple xml file save](https://github.com/Beej126/Win10VirtualDesktopDeskBand/blob/aef58f938eca450dab1bca6a2dcfaf2eb9bc9e73/Win10VirtualDesktopDeskBand/DeskBandUserControl.xaml.cs#L151) since not much is needed here, works great!
+
+## Reference Links
+### DeskBand
+- https://github.com/dsafa/CSDeskBand
+- https://github.com/navhaxs/media-control-deskband
+- https://github.com/patbec/TaskbarSampleExtension
+### Virtual Desktop
+- https://docs.microsoft.com/en-us/windows/win32/api/shobjidl_core/nn-shobjidl_core-ivirtualdesktopmanager
+- https://github.com/Grabacr07/VirtualDesktop
+- https://github.com/m0ngr31/VirtualDesktopManager/issues/13
+- https://stackoverflow.com/questions/32659505/windows-10-ivirtualdesktopmanagermovewindowtodesktop
+- IActionView CLSID updates: https://github.com/mzomparelli/zVirtualDesktop/wiki
