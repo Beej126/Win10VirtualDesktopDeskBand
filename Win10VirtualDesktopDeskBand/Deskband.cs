@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using CSDeskBand;
+﻿using CSDeskBand;
 using CSDeskBand.ContextMenu;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Windows;
 
 namespace Win10VirtualDesktopDeskBand
 {
     [ComVisible(true)]
     [Guid("AA01ACB3-6CCC-497C-9CE6-9211F2EDFC10")]
-    [CSDeskBandRegistration(Name = "Sample wpf")]
+    [CSDeskBandRegistration(Name = "Virtual Desktop Widget")]
     public class Deskband : CSDeskBandWpf
     {
         public Deskband()

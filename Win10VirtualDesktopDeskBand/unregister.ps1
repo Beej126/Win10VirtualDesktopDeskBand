@@ -5,7 +5,7 @@ $red = $esc + "[91m"
 
 $error.clear()
 
-gacutil /u .\bin\Debug\Win10VirtualDesktopDeskBand
+gacutil /u Win10VirtualDesktopDeskBand
  ($? ? $green + "success" : $red + "FAILED") + $reset #gosh i love powershell =)
 if (!$?) { exit }
 
