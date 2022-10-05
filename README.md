@@ -48,6 +48,7 @@ pretty quick and dirty combination of:
 ### DeskBand
 - https://github.com/dsafa/CSDeskBand
 - https://github.com/navhaxs/media-control-deskband
+- https://github.com/Tom60chat/DeskBand-Media-Controls - better installer to model than the above... UX was flakey for me... that seems to be really common... the COM level where these extensions get registered into Windows Explorer is pretty hard to get right, maybe that's some of why Msft chucked them from Win11
 - https://github.com/patbec/TaskbarSampleExtension
 ### Virtual Desktop
 - https://docs.microsoft.com/en-us/windows/win32/api/shobjidl_core/nn-shobjidl_core-ivirtualdesktopmanager
