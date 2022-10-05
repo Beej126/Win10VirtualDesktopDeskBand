@@ -6,7 +6,7 @@ pretty quick and dirty combination of:
 - ~~[SharpShell](https://github.com/dwmkerr/sharpshell) for the DeskBand (aka Toolbar)~~
 - [CSDeskband](https://github.com/dsafa/CSDeskBand) for it's WPF Support, which provides background transparency, SharpShell seemed to be WinForms only 
 - [VirtualDesktop](https://github.com/Grabacr07/VirtualDesktop) helper library... boy is this some complex code! no way i would've got that working
-  - i've embedded the source vs referencing nuget because had to do a few small patches on top of v4.0.1 (search for "fix:") to get to work under .Net Framework (4.7.2), necessary because i don't think COM regasm is supported by .net core quite yet... sounds like they're on it
+  - i've embedded the source vs referencing nuget because had to do a few small patches on top of v4.0.1 (search for "fix:") to get to work under .Net Framework (4.7.2), necessary because i don't think COM regasm is supported by .net core quite yet?? [but seems like they're on it](https://github.com/dotnet/runtime/issues/34609)
 
 ![](https://user-images.githubusercontent.com/6301228/82292998-aa391800-9960-11ea-9b6c-39ee87ff8677.png)
 ![](https://user-images.githubusercontent.com/6301228/82292734-4282cd00-9960-11ea-9c2d-072737dbc82f.gif)
